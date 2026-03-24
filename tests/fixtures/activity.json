@@ -1,0 +1,574 @@
+{
+  "data": {
+    "start_time": "2025-06-01T00:00:00Z",
+    "end_time": "2025-08-31T23:59:59Z",
+    "total": {
+      "clients": 10,
+      "entity_clients": 8,
+      "non_entity_clients": 1,
+      "secret_syncs": 1,
+      "acme_clients": 0,
+      "distinct_entities": 8,
+      "non_entity_tokens": 1
+    },
+    "by_namespace": [
+      {
+        "namespace_id": "Aa111",
+        "namespace_path": "team-a/",
+        "counts": {
+          "clients": 6,
+          "entity_clients": 4,
+          "non_entity_clients": 1,
+          "secret_syncs": 1
+        },
+        "mounts": [
+          {
+            "mount_path": "auth/oidc/",
+            "mount_type": "oidc",
+            "counts": {
+              "clients": 1,
+              "entity_clients": 1,
+              "non_entity_clients": 0,
+              "secret_syncs": 0
+            }
+          },
+          {
+            "mount_path": "auth/kubernetes/",
+            "mount_type": "kubernetes",
+            "counts": {
+              "clients": 1,
+              "entity_clients": 1,
+              "non_entity_clients": 0,
+              "secret_syncs": 0
+            }
+          },
+          {
+            "mount_path": "auth/token/",
+            "mount_type": "ns_token",
+            "counts": {
+              "clients": 1,
+              "entity_clients": 1,
+              "non_entity_clients": 0,
+              "secret_syncs": 0
+            }
+          },
+          {
+            "mount_path": "auth/ldap/",
+            "mount_type": "ldap",
+            "counts": {
+              "clients": 1,
+              "entity_clients": 1,
+              "non_entity_clients": 0,
+              "secret_syncs": 0
+            }
+          },
+          {
+            "mount_path": "auth/approle/",
+            "mount_type": "approle",
+            "counts": {
+              "clients": 1,
+              "entity_clients": 1,
+              "non_entity_clients": 0,
+              "secret_syncs": 0
+            }
+          },
+          {
+            "mount_path": "sys/sync/",
+            "mount_type": "",
+            "counts": {
+              "clients": 1,
+              "entity_clients": 1,
+              "non_entity_clients": 0,
+              "secret_syncs": 0
+            }
+          }
+        ]
+      },
+      {
+        "namespace_id": "Bb222",
+        "namespace_path": "team-b/",
+        "counts": {
+          "clients": 2,
+          "entity_clients": 2,
+          "non_entity_clients": 0,
+          "secret_syncs": 0
+        },
+        "mounts": [
+          {
+            "mount_path": "auth/oidc/",
+            "mount_type": "oidc",
+            "counts": {
+              "clients": 1,
+              "entity_clients": 1,
+              "non_entity_clients": 0,
+              "secret_syncs": 0
+            }
+          },
+          {
+            "mount_path": "auth/kubernetes/",
+            "mount_type": "kubernetes",
+            "counts": {
+              "clients": 1,
+              "entity_clients": 1,
+              "non_entity_clients": 0,
+              "secret_syncs": 0
+            }
+          }
+        ]
+      },
+      {
+        "namespace_id": "root",
+        "namespace_path": "",
+        "counts": {
+          "clients": 1,
+          "entity_clients": 1,
+          "non_entity_clients": 0,
+          "secret_syncs": 0
+        },
+        "mounts": [
+          {
+            "mount_path": "auth/oidc/",
+            "mount_type": "oidc",
+            "counts": {
+              "clients": 1,
+              "entity_clients": 1,
+              "non_entity_clients": 0,
+              "secret_syncs": 0
+            }
+          }
+        ]
+      },
+      {
+        "namespace_id": "Cc333",
+        "namespace_path": "team-a/child/",
+        "counts": {
+          "clients": 1,
+          "entity_clients": 1,
+          "non_entity_clients": 0,
+          "secret_syncs": 0
+        },
+        "mounts": [
+          {
+            "mount_path": "auth/ldap/",
+            "mount_type": "ldap",
+            "counts": {
+              "clients": 1,
+              "entity_clients": 1,
+              "non_entity_clients": 0,
+              "secret_syncs": 0
+            }
+          }
+        ]
+      }
+    ],
+    "months": [
+      {
+        "timestamp": "2025-06-01T00:00:00Z",
+        "counts": {
+          "clients": 2,
+          "entity_clients": 2,
+          "non_entity_clients": 0,
+          "secret_syncs": 0
+        },
+        "namespaces": [
+          {
+            "namespace_id": "root",
+            "namespace_path": "",
+            "counts": {
+              "clients": 1,
+              "entity_clients": 1,
+              "non_entity_clients": 0,
+              "secret_syncs": 0
+            },
+            "mounts": [
+              {
+                "mount_path": "auth/oidc/",
+                "mount_type": "oidc",
+                "counts": {
+                  "clients": 1,
+                  "entity_clients": 1,
+                  "non_entity_clients": 0,
+                  "secret_syncs": 0
+                }
+              }
+            ]
+          },
+          {
+            "namespace_id": "Aa111",
+            "namespace_path": "team-a/",
+            "counts": {
+              "clients": 1,
+              "entity_clients": 1,
+              "non_entity_clients": 0,
+              "secret_syncs": 0
+            },
+            "mounts": [
+              {
+                "mount_path": "auth/oidc/",
+                "mount_type": "oidc",
+                "counts": {
+                  "clients": 1,
+                  "entity_clients": 1,
+                  "non_entity_clients": 0,
+                  "secret_syncs": 0
+                }
+              }
+            ]
+          }
+        ],
+        "new_clients": {
+          "counts": {
+            "clients": 2,
+            "entity_clients": 2,
+            "non_entity_clients": 0,
+            "secret_syncs": 0
+          },
+          "namespaces": [
+            {
+              "namespace_id": "root",
+              "namespace_path": "",
+              "counts": {
+                "clients": 1,
+                "entity_clients": 1,
+                "non_entity_clients": 0,
+                "secret_syncs": 0
+              },
+              "mounts": [
+                {
+                  "mount_path": "auth/oidc/",
+                  "mount_type": "oidc",
+                  "counts": {
+                    "clients": 1,
+                    "entity_clients": 1,
+                    "non_entity_clients": 0,
+                    "secret_syncs": 0
+                  }
+                }
+              ]
+            },
+            {
+              "namespace_id": "Aa111",
+              "namespace_path": "team-a/",
+              "counts": {
+                "clients": 1,
+                "entity_clients": 1,
+                "non_entity_clients": 0,
+                "secret_syncs": 0
+              },
+              "mounts": [
+                {
+                  "mount_path": "auth/oidc/",
+                  "mount_type": "oidc",
+                  "counts": {
+                    "clients": 1,
+                    "entity_clients": 1,
+                    "non_entity_clients": 0,
+                    "secret_syncs": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "timestamp": "2025-07-01T00:00:00Z",
+        "counts": {
+          "clients": 4,
+          "entity_clients": 3,
+          "non_entity_clients": 1,
+          "secret_syncs": 0
+        },
+        "namespaces": [
+          {
+            "namespace_id": "Bb222",
+            "namespace_path": "team-b/",
+            "counts": {
+              "clients": 2,
+              "entity_clients": 2,
+              "non_entity_clients": 0,
+              "secret_syncs": 0
+            },
+            "mounts": [
+              {
+                "mount_path": "auth/oidc/",
+                "mount_type": "oidc",
+                "counts": {
+                  "clients": 1,
+                  "entity_clients": 1,
+                  "non_entity_clients": 0,
+                  "secret_syncs": 0
+                }
+              },
+              {
+                "mount_path": "auth/kubernetes/",
+                "mount_type": "kubernetes",
+                "counts": {
+                  "clients": 1,
+                  "entity_clients": 1,
+                  "non_entity_clients": 0,
+                  "secret_syncs": 0
+                }
+              }
+            ]
+          },
+          {
+            "namespace_id": "Aa111",
+            "namespace_path": "team-a/",
+            "counts": {
+              "clients": 2,
+              "entity_clients": 1,
+              "non_entity_clients": 1,
+              "secret_syncs": 0
+            },
+            "mounts": [
+              {
+                "mount_path": "auth/kubernetes/",
+                "mount_type": "kubernetes",
+                "counts": {
+                  "clients": 1,
+                  "entity_clients": 1,
+                  "non_entity_clients": 0,
+                  "secret_syncs": 0
+                }
+              },
+              {
+                "mount_path": "auth/token/",
+                "mount_type": "ns_token",
+                "counts": {
+                  "clients": 1,
+                  "entity_clients": 1,
+                  "non_entity_clients": 0,
+                  "secret_syncs": 0
+                }
+              }
+            ]
+          }
+        ],
+        "new_clients": {
+          "counts": {
+            "clients": 4,
+            "entity_clients": 3,
+            "non_entity_clients": 1,
+            "secret_syncs": 0
+          },
+          "namespaces": [
+            {
+              "namespace_id": "Bb222",
+              "namespace_path": "team-b/",
+              "counts": {
+                "clients": 2,
+                "entity_clients": 2,
+                "non_entity_clients": 0,
+                "secret_syncs": 0
+              },
+              "mounts": [
+                {
+                  "mount_path": "auth/oidc/",
+                  "mount_type": "oidc",
+                  "counts": {
+                    "clients": 1,
+                    "entity_clients": 1,
+                    "non_entity_clients": 0,
+                    "secret_syncs": 0
+                  }
+                },
+                {
+                  "mount_path": "auth/kubernetes/",
+                  "mount_type": "kubernetes",
+                  "counts": {
+                    "clients": 1,
+                    "entity_clients": 1,
+                    "non_entity_clients": 0,
+                    "secret_syncs": 0
+                  }
+                }
+              ]
+            },
+            {
+              "namespace_id": "Aa111",
+              "namespace_path": "team-a/",
+              "counts": {
+                "clients": 2,
+                "entity_clients": 1,
+                "non_entity_clients": 1,
+                "secret_syncs": 0
+              },
+              "mounts": [
+                {
+                  "mount_path": "auth/kubernetes/",
+                  "mount_type": "kubernetes",
+                  "counts": {
+                    "clients": 1,
+                    "entity_clients": 1,
+                    "non_entity_clients": 0,
+                    "secret_syncs": 0
+                  }
+                },
+                {
+                  "mount_path": "auth/token/",
+                  "mount_type": "ns_token",
+                  "counts": {
+                    "clients": 1,
+                    "entity_clients": 1,
+                    "non_entity_clients": 0,
+                    "secret_syncs": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "timestamp": "2025-08-01T00:00:00Z",
+        "counts": {
+          "clients": 4,
+          "entity_clients": 3,
+          "non_entity_clients": 0,
+          "secret_syncs": 1
+        },
+        "namespaces": [
+          {
+            "namespace_id": "Cc333",
+            "namespace_path": "team-a/child/",
+            "counts": {
+              "clients": 1,
+              "entity_clients": 1,
+              "non_entity_clients": 0,
+              "secret_syncs": 0
+            },
+            "mounts": [
+              {
+                "mount_path": "auth/ldap/",
+                "mount_type": "ldap",
+                "counts": {
+                  "clients": 1,
+                  "entity_clients": 1,
+                  "non_entity_clients": 0,
+                  "secret_syncs": 0
+                }
+              }
+            ]
+          },
+          {
+            "namespace_id": "Aa111",
+            "namespace_path": "team-a/",
+            "counts": {
+              "clients": 3,
+              "entity_clients": 2,
+              "non_entity_clients": 0,
+              "secret_syncs": 1
+            },
+            "mounts": [
+              {
+                "mount_path": "auth/ldap/",
+                "mount_type": "ldap",
+                "counts": {
+                  "clients": 1,
+                  "entity_clients": 1,
+                  "non_entity_clients": 0,
+                  "secret_syncs": 0
+                }
+              },
+              {
+                "mount_path": "auth/approle/",
+                "mount_type": "approle",
+                "counts": {
+                  "clients": 1,
+                  "entity_clients": 1,
+                  "non_entity_clients": 0,
+                  "secret_syncs": 0
+                }
+              },
+              {
+                "mount_path": "sys/sync/",
+                "mount_type": "",
+                "counts": {
+                  "clients": 1,
+                  "entity_clients": 1,
+                  "non_entity_clients": 0,
+                  "secret_syncs": 0
+                }
+              }
+            ]
+          }
+        ],
+        "new_clients": {
+          "counts": {
+            "clients": 4,
+            "entity_clients": 3,
+            "non_entity_clients": 0,
+            "secret_syncs": 1
+          },
+          "namespaces": [
+            {
+              "namespace_id": "Cc333",
+              "namespace_path": "team-a/child/",
+              "counts": {
+                "clients": 1,
+                "entity_clients": 1,
+                "non_entity_clients": 0,
+                "secret_syncs": 0
+              },
+              "mounts": [
+                {
+                  "mount_path": "auth/ldap/",
+                  "mount_type": "ldap",
+                  "counts": {
+                    "clients": 1,
+                    "entity_clients": 1,
+                    "non_entity_clients": 0,
+                    "secret_syncs": 0
+                  }
+                }
+              ]
+            },
+            {
+              "namespace_id": "Aa111",
+              "namespace_path": "team-a/",
+              "counts": {
+                "clients": 3,
+                "entity_clients": 2,
+                "non_entity_clients": 0,
+                "secret_syncs": 1
+              },
+              "mounts": [
+                {
+                  "mount_path": "auth/ldap/",
+                  "mount_type": "ldap",
+                  "counts": {
+                    "clients": 1,
+                    "entity_clients": 1,
+                    "non_entity_clients": 0,
+                    "secret_syncs": 0
+                  }
+                },
+                {
+                  "mount_path": "auth/approle/",
+                  "mount_type": "approle",
+                  "counts": {
+                    "clients": 1,
+                    "entity_clients": 1,
+                    "non_entity_clients": 0,
+                    "secret_syncs": 0
+                  }
+                },
+                {
+                  "mount_path": "sys/sync/",
+                  "mount_type": "",
+                  "counts": {
+                    "clients": 1,
+                    "entity_clients": 1,
+                    "non_entity_clients": 0,
+                    "secret_syncs": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

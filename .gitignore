@@ -1,0 +1,11 @@
+# Customer exports, reports and other engagement data. Never commit these.
+private/
+
+# Generated output
+dist/
+smoke_out/
+*.sqlite
+__pycache__/
+.pytest_cache/
+
+.DS_Store
