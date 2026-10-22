@@ -82,3 +82,7 @@ Exports and reports contain customer namespace names and, in several outputs, **
 
 - `private/` is git-ignored as a local working area for engagement data. Keep exports and reports there and never commit from it.
 - Test fixtures must stay synthetic. Never copy a real export into `tests/`.
+
+## License
+
+[MIT](LICENSE)
