@@ -59,16 +59,12 @@ Each script has `--help`. [SKILL.md](vault-client-usage-analyzer/SKILL.md) cover
 
 ## Using it as a Claude skill
 
-Build the package:
-
-```bash
-./build_skill.sh
-```
+Download the packaged skill from the [latest release](https://github.com/DarthVaderRC/vault-client-insights/releases/latest/download/vault-client-usage-analyzer.skill), or build it yourself with `./build_skill.sh` (output: `dist/vault-client-usage-analyzer.skill`).
 
 Then do one of the following:
 
-- **Claude Code:** copy the `vault-client-usage-analyzer/` folder to `~/.claude/skills/` (personal) or `.claude/skills/` in a project.
-- **Claude.ai / Claude Desktop:** upload `dist/vault-client-usage-analyzer.skill` under Settings > Capabilities > Skills.
+- **Claude Code:** copy the `vault-client-usage-analyzer/` folder to `~/.claude/skills/` (personal) or `.claude/skills/` in a project. The `.skill` file is a zip, so you can also unzip it there.
+- **Claude.ai / Claude Desktop:** upload the `.skill` file under Settings > Capabilities > Skills.
 
 Then ask something like "Analyze this Vault activity export and entity CSV" with the files attached or in the working directory.
 
