@@ -1,6 +1,6 @@
-# Vault Client Usage Analyzer
+# Vault Client Insights
 
-A Claude skill and a set of standalone Python scripts for analyzing HashiCorp Vault client usage from two raw exports:
+The `vault-client-usage-analyzer` Claude skill and a set of standalone Python scripts for analyzing HashiCorp Vault client usage from two raw exports:
 
 - the **counters activity JSON** from `sys/internal/counters/activity`
 - an **identity entity inventory CSV** exported with the included script
